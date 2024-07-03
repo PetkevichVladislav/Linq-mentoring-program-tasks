@@ -1,0 +1,11 @@
+﻿Task: 
+    Description: 
+    Your task is to implement a custom IQueryable which supports the Where clause by using Linq expressions to translate Where clauses into SQL queries.
+    You will modify the RelationalDatabaseExpressionVisitor to visit the expressions and return a SQL query string for each.
+    The Where clause will only support the comparison operators >, <, =, &&, >=, <= and !=.
+
+    Requirements:
+    *Modify the Expressions.Task3.UnderQueryableCurtains.RelationalDatabaseExpressionVisitor to handle Conditional Logical Operators (&&) and Comparison Operators (>, <, =, >=, <=, !=):
+    The method should parse the binary expressions, and based on each expression's node type, append the relevant SQL syntax to the sqlQuery StringBuilder.
+    *Ensure that the function Expressions.Task3.UnderQueryableCurtains.RelationalDatabaseExpressionVisitor.GetExpressionSql returns sql query as a string.
+    *All Expressions.Task3.StringExtensions.Tests.StringExtensionTests related to ExtractDigitsFromString unit tests should be green.
